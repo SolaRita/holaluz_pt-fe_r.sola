@@ -7,7 +7,7 @@ import "./index.css"
 
 export default function Grid() {
   return (
-    <div >
+    <div className="grid">
       <ClientCard />
       <ClientDiscount/>
 

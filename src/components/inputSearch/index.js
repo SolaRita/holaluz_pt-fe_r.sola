@@ -1,11 +1,10 @@
 import "./index.css";
-
 import "./index.css"
 
 
 export default function Form() {
     return(
-        <div> 
+        <div className="searchCard"> 
         <fieldset>
             <h1>¿Quieres formar parte de la revolución de los tejados?</h1>
     

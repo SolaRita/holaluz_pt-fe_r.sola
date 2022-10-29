@@ -1,0 +1,23 @@
+fieldset {
+    background-color: transparent;
+    border-color: transparent;
+    }
+
+.searchCard{
+    display: flex;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 3vw;
+    margin-bottom: 5vh;
+    padding: 2vw;
+    gap: 2vh;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, #B3005D 0%, #F5921D 74%);
+    color: aliceblue;
+    
+}
+
+.search{
+display: grid;
+}
