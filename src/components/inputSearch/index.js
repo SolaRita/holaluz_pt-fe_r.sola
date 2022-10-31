@@ -18,8 +18,8 @@ export default function InputSearch() {
                 ev.preventDefault(); 
                 console.log(ev.target.cups.value)}}
                 className="search" method="post" name="calculadora descuentos" >
-
-                <label>Introduce aquí tu numero CUPS: </label>
+<div>
+<label>Introduce aquí tu numero CUPS: </label>
                 <input
                     ref={inputCUPS}
                     autocompleate = 'off'
@@ -30,6 +30,8 @@ export default function InputSearch() {
                     placeholder="XXXX"
                     className="input"
                     />
+</div>
+                
                 
                 <button className="button" type='submit'>Iniciar revolución</button>
 

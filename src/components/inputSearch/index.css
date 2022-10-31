@@ -1,3 +1,5 @@
+@import "../../styles/variables/colors.css";
+
 fieldset {
     background-color: transparent;
     border-color: transparent;
@@ -20,4 +22,21 @@ fieldset {
 
 .search{
 display: grid;
+}
+
+.button{
+    border-radius: 10px;
+    margin-top: 10vh;
+    padding: 2%;
+    justify-self: center;
+    border: var(--background-card-color);
+    white-space: normal;
+}
+
+.input{
+    white-space: normal;
+    margin-top: 3vh;
+    max-width: 5.5%;
+    justify-self: center;
+
 }
