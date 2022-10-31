@@ -6,9 +6,7 @@ export default function InputSearch() {
     
     const inputCUPS = useRef(null);
     
-    function handleSearch(){
-        console.log(inputCUPS.current.value);
-    }
+ 
 
 
     return(
@@ -33,7 +31,7 @@ export default function InputSearch() {
                     className="input"
                     />
                 
-                <button onClick={handleSearch} className="button" type='submit'>Iniciar revolución</button>
+                <button className="button" type='submit'>Iniciar revolución</button>
 
             </form>
         </fieldset>
