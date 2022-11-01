@@ -1,4 +1,3 @@
-
 export type Client = {
     full_name: string
     address: string
