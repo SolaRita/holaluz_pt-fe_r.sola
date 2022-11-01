@@ -4,9 +4,10 @@ import "./index.css";
 
 export default function ClientCard(props) {
     return (
-      <div>
+      <div className="clientCard">
        <h3>Hola {props.full_name}</h3>
-       <h4>{props.CanUserSubscribe}</h4> 
+       <p>{props.canUserSubscribe}</p>
+       <p>{props.discount}</p>
       </div>
     );
   }
