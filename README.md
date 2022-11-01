@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<div id="top"></div>
+<!--Holaluz Frontend coding test -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- What is about? -->
+# What is about?
+### Holaluz Frontend coding test
 
-## Available Scripts
+## Exercice
 
-In the project directory, you can run:
+At Holaluz we are releasing a new brand product related with our rooftop revolution.
 
-### `npm start`
+Some clients did contact us asking for this new product and which requirements and offers we have in order to get enrolled.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We need a landing page that given a CUPS search we display both its client and supply point information, plus if the client can become part of the rooftop revolution including the type of offer they would get.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements
 
-### `npm test`
+### Business requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* We need to know which clients are allowed to get enrolled with the rooftop revolution. In order to offer solar product, the client's `building_type` must be **house** and it needs to have **at least 1 neighbor**.
 
-### `npm run build`
+* We have three types of offers for those clients that can have be part of the rooftop revolution each of them with a different discount percentage and with their conditions:
+    1. **Standard offer**: No discount, no conditions.
+    2. **Basic discount**: 5% discount. Conditions: its neighbors should have `p1` and `p2` powers lower than the current client's supply point.
+    3. **Special discount**: 12% discount. Conditions: the addition of the `invoiced_amount` of its neighbors should be more than 100 euros.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Technical requirements
+* You will have to build an web application using Vue.js framework.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* You can implement your own CSS or use a UI components library.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* CUPS search must be handled by an input.
 
-### `npm run eject`
+* You should spend between 3 and 5 hours working on this.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* We will use the code you deliver to us for the pair programming step of the interview process.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* You will find two `.json` files. You should tread each of them like they are returned by a different endpoint.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Glossary
+- **CUPS**: Universal acronym for the supply point identifier number in Spanish
+- **Neighbors**: Clients that live near by identified by CUPS.
+- **Tariff**: Name of the contracted supply point product.
+- **Power**: Divided by two different periods, represents the provided energy to the supply point in Watts.
+- **Invoiced amount**: Price that the client is paying monthly for the contracted power in euros.
+- **Building type**: Type of building the client lives in.
+- **Role**: The given type of client according to our internal marketing structure.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- GettingStart -->
+# GETTING START:
 
-## Learn More
+### 1. To run this project -> `npm start`
+* Runs the app in the development mode.
+* Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. To run the test -> `npm test`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. To build the project (still not implemented) -> `npm run build`
 
-### Code Splitting
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- CONTACT -->
+## Contact
 
-### Analyzing the Bundle Size
+Rita Solà - ritasolacanals@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
